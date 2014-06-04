@@ -23,7 +23,7 @@ public class IntegerAddition {
 		
 		promptNumber(firstNum); // call promptNumber method 2 times to add 2 integers
 		promptNumber(secondNum);
-        getSum(); // display sum of two integers in pane
+                getSum(); // display sum of two integers in pane
 		System.exit(0); // end program
 		
 	} //end method
