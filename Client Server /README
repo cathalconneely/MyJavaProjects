@@ -1,15 +1,8 @@
-Demonstrates the use of client/server interaction. A client can send integer numbers to the server which 
-adds each number to a global sum.
+Demonstrates the use of client/server interaction. A client can send integer numbers to the server which adds each number to a global sum.
 
-The server adds the received number to a global variable with type Integer, prints the new value of that 
-variable (that is, the sum of the variable’s previous value and the received number), and responds to the 
-client by sending message OK to the client. However, if adding the received number to the global variable 
-would cause an overflow (that is, if the sum would be larger than the maximum value allowed for integers 
-in Java), the server responds by sending ERROR to the client (instead of OK) and does not add the number
-to the global sum.
+The server adds the received number to a global variable with type Integer, prints the new value of that variable (that is, the sum of the variable’s previous value and the received number), and responds to the client by sending message OK to the client. However, if adding the received number to the global variable 
+would cause an overflow (that is, if the sum would be larger than the maximum value allowed for integers in Java), the server responds by sending ERROR to the client (instead of OK) and does not add the number to the global sum.
 
-If the client request is QUIT, then the server ends the connection to that client and prints “Connection 
-to client ended”. No further messages are sent to that client.
+If the client request is QUIT, then the server ends the connection to that client and prints “Connection to client ended”. No further messages are sent to that client.
 
-I have created two server classes: one to demonstrate a basic server which handles a single client at a 
-time, and one which handles multiple clients concurrently.
+I have created two server classes: one to demonstrate a basic server which handles a single client at a time, and one which handles multiple clients concurrently.
