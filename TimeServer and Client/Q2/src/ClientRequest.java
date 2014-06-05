@@ -8,8 +8,8 @@ import java.net.Socket;
 
 public class ClientRequest {
 			
-        private ObjectInputStream instream; // create ObjectInputStream
-	    private Socket socket; // Create Socket
+         private ObjectInputStream instream; // create ObjectInputStream
+	 private Socket socket; // Create Socket
 		     
 	    public void createConnection() throws IOException {
 
@@ -17,20 +17,20 @@ public class ClientRequest {
 		        socket = new Socket("localhost", 8999); // create socket connection by setting host and port
 		        
 		        instream = new ObjectInputStream(socket.getInputStream()); // create ObjectInputStream using socket
-		    }
+	    }
 		    
 		
 		// method to print incoming Message object		
 	    public void printRequest() throws IOException, ClassNotFoundException{
                      
-	    	         Message m = (Message) instream.readObject(); // cast instream object to type Message
-                     System.out.println(m.timeAndDate); // print message as date object
-                     instream.close(); // close stream
+	    	        Message m = (Message) instream.readObject(); // cast instream object to type Message
+                        System.out.println(m.timeAndDate); // print message as date object
+                        instream.close(); // close stream
             }
 
 		     
 		     
-		public static void main(String[] args) throws ClassNotFoundException{    	 
+            public static void main(String[] args) throws ClassNotFoundException{    	 
 		    	 	 
 		    	 try {
 
@@ -40,7 +40,7 @@ public class ClientRequest {
 			         
 		    		 myClientInstance.createConnection(); // Creates necessary handshaking between client and server
 		                     
-		             myClientInstance.printRequest(); // parse input from string to Integer and call
+		                 myClientInstance.printRequest(); // parse input from string to Integer and call
 		                	                         // sendInput method to send input to server        
 
 		        
