@@ -18,7 +18,7 @@ public class TimeServer {
 		// main method
 		public static void main(String[]args){ 
 		
-	    try { 
+	        try { 
 		     ServerSocket serverSocket = new ServerSocket(8999); // declare and create server socket
 		     while (true) { 
 
