@@ -13,23 +13,23 @@ public class Client {
 		
 	private BufferedReader in; // Create BufferedReader
 	private PrintWriter out; // Create PrintWriter
-    private Socket socket; // Create Socket
+        private Socket socket; // Create Socket
 	     
-    public void createConnection() throws IOException {
-
+        public void createConnection() throws IOException {
+ 
 	        // create connection and initialize in/out streams
 	        socket = new Socket("localhost", 8888); // create socket connection by setting host and port
 	        in = new BufferedReader(new InputStreamReader(socket.getInputStream())); // Creates incoming stream
 	        out = new PrintWriter(socket.getOutputStream()); //Creates outgoing stream
 	    }
 	    
-	     public void sendInput(String myInput) throws IOException{
+        public void sendInput(String myInput) throws IOException{
 	         out.println(myInput); // sends integer to server 
 	         out.flush(); // flushes server feed
 	         System.out.println(in.readLine()); // prints incoming response from server e.g "OK"
 	     }
 	     
-	     public static void main(String[] args){    	 
+	public static void main(String[] args){    	 
 	    	 	 
 	    	 try {
 
