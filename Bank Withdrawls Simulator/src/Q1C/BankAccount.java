@@ -3,8 +3,8 @@ package Q1C;
 
 public class BankAccount {
 	
-	// declare variables
-	double balance;
+    // declare variables
+    double balance;
     int accountNum;
     
     // create BankAccount constructors
