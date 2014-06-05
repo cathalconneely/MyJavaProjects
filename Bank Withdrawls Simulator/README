@@ -1,0 +1,6 @@
+program which models a bank account and simulates multiple concurrent withdrawals from this account using multithreading. Program has three classes: BankAccount, WithdrawlsSimulator and Test. 
+
+The class WithdrawalsSimulator which implements the Runnable interface in the Java API. The class declares a field bankAccount of type BankAccount. Method run() calls 15 times the withdraw-method of that bank account, each time attempting to withdraw €50 (i.e., the maximum amount of money 
+withdrawn using a single call of run() is 15*€50=€750). Before each attempt to withdraw €50, there is be a pause of 50ms. Class WithdrawalsSimulator also contain a constructor which allows to specify the bank account which is used by run() (i.e., the value of field bankAccount). 
+
+The class Test contains a static method main. This method creates a (single) object of class BankAccount, with an initial balance of €1000.
