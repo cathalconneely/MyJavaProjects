@@ -52,10 +52,10 @@ public class TimeServer {
 	 class Message implements Serializable { 
 		//This helper class can be used both by server and client code 
 		 
-		   /**
-			 * 
-			 */
-			private static final long serialVersionUID = 1L;
+		    /**
+		      * 
+		      */
+		    private static final long serialVersionUID = 1L;
 		    Date timeAndDate; 
 		    // Objects of class Message comprise time & date
 		
