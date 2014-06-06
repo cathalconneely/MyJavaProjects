@@ -1,0 +1,3 @@
+This program reads in integer values from a text file and allows users to sort the integers by selecting a sorting method to use (Bubble sort, Selection sort, Insertion sort, Merge sort, or Quick sort). The user is promped to enter the location of the file they wish to read in. Once the file is read in successfully, the user is selects their preferred sorting method, and is prompted to select a file destination (txt file) to write the sorted contents to.
+
+A sample text file (RandomNumbers.txt) has been added to the directory. This is the file that I used to test the program during development.
