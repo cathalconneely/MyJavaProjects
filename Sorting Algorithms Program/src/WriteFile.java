@@ -56,7 +56,7 @@ public class WriteFile {
 		}
 	
 	   
-    /*
+        /*
 	 * writeFile method is called in the main method on the sorted array to write the results to a .txt file.
 	 * This method prompts the user to input their desired write destination.
 	 */
