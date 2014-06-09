@@ -5,7 +5,8 @@ public class SelectionSort {
 	// constructor
     public SelectionSort(int [] myArray){
     	
-    	selectionSort(myArray);
+    selectionSort(myArray);
+    	
     }
         
     // selectionSort method to be called in main method on array.
