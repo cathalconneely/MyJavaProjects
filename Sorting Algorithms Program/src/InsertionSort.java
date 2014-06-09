@@ -2,10 +2,11 @@ package mySortingAlgorithms;
  
 public class InsertionSort {
 
-	// constructor 
+    // constructor 
     public InsertionSort(int [] myArray){
     	
-    	insertionSort(myArray); // call insertionSort method on array  	
+    insertionSort(myArray); // call insertionSort method on array  	
+    	
     }
 
 
