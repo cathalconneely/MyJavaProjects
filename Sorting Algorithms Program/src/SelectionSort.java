@@ -2,7 +2,7 @@ package mySortingAlgorithms;
 
 public class SelectionSort {
 	
-	// constructor
+    // constructor
     public SelectionSort(int [] myArray){
     	
     selectionSort(myArray);
