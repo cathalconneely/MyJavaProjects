@@ -6,7 +6,7 @@ public class BubbleSort {
 	// constructor
 	public BubbleSort(int [] myArray){
 		
-		bubbleSort(myArray); // call bubbleSort method on array
+	bubbleSort(myArray); // call bubbleSort method on array
 
 	}
 	
