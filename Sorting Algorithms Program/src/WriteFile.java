@@ -60,30 +60,30 @@ public class WriteFile {
 	 * writeFile method is called in the main method on the sorted array to write the results to a .txt file.
 	 * This method prompts the user to input their desired write destination.
 	 */
-    public void writeFile(int[] a){       
+        public void writeFile(int[] a){       
 	   
-    	try{  
-	       Scanner myWriteScanner = new Scanner(System.in); // Declare and create instance of scanner.
-	       System.out.println("Please Enter the file path to which you would like to write the sorted file:");
+    	     try{  
+	           Scanner myWriteScanner = new Scanner(System.in); // Declare and create instance of scanner.
+	           System.out.println("Please Enter the file path to which you would like to write the sorted file:");
 	        	 
-	       String myOutputFile = myWriteScanner.nextLine(); // myOutputFile assigned to user input.
+	           String myOutputFile = myWriteScanner.nextLine(); // myOutputFile assigned to user input.
           
-	       File myFileWriter = new File(myOutputFile);  // New File instance of myOutputFile.
-               FileOutputStream outFileStream = new FileOutputStream(myFileWriter); // OutputStream created 
-               PrintWriter output = new PrintWriter(outFileStream); // Creates print destination. 
+	           File myFileWriter = new File(myOutputFile);  // New File instance of myOutputFile.
+                   FileOutputStream outFileStream = new FileOutputStream(myFileWriter); // OutputStream created 
+                   PrintWriter output = new PrintWriter(outFileStream); // Creates print destination. 
 	       
-	       // for loop iterates through all of sorted array
-	       for(int i=0; i<a.length; i++){  
-	          if(a[i] != 0)                         
-	          output.write(a[i] + "\n"); // If array size is greater than 0, write all elements of array.                               
-	       }  
-	       output.close(); // Close PrintWriter.  
-	       System.out.println("File Written Successfully!");
-	   } // End Try.               
+	           // for loop iterates through all of sorted array
+	           for(int i=0; i<a.length; i++){  
+	              if(a[i] != 0)                         
+	              output.write(a[i] + "\n"); // If array size is greater than 0, write all elements of array.                               
+	           }  
+	           output.close(); // Close PrintWriter.  
+	           System.out.println("File Written Successfully!");
+	       } // End Try.               
 	   
-	   catch(IOException e){  
-	         System.out.println(e); // Print IOException.    
-	         } // End Catch.
+	       catch(IOException e){  
+	             System.out.println(e); // Print IOException.    
+	             } // End Catch.
+        } // end writeFile method
 
-    } // end writeFile method
 } // end class
