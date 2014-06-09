@@ -53,7 +53,7 @@ public class WriteFile {
 		
 		myQuickSort = quickSort;
 			
-		}
+	}
 	
 	   
         /*
@@ -69,8 +69,8 @@ public class WriteFile {
 	       String myOutputFile = myWriteScanner.nextLine(); // myOutputFile assigned to user input.
           
 	       File myFileWriter = new File(myOutputFile);  // New File instance of myOutputFile.
-           FileOutputStream outFileStream = new FileOutputStream(myFileWriter); // OutputStream created 
-           PrintWriter output = new PrintWriter(outFileStream); // Creates print destination. 
+               FileOutputStream outFileStream = new FileOutputStream(myFileWriter); // OutputStream created 
+               PrintWriter output = new PrintWriter(outFileStream); // Creates print destination. 
 	       
 	       // for loop iterates through all of sorted array
 	       for(int i=0; i<a.length; i++){  
