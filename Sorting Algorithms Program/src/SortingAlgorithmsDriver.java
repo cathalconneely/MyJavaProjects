@@ -60,31 +60,36 @@ public class SortingAlgorithmsDriver {
                         if (sortMethod == 1) {
                             System.out.println("Bubble sort selected.");
 					        BubbleSort bubbleSort = new BubbleSort(RandomNumbers); // Create BubbleSort object using RandomNumbers as arg            	
-                            bubbleSort.writeFile(RandomNumbers); // write sorted array to file
+                            WriteFile myWriteFile = new WriteFile(bubbleSort); // Create WriteFile object with BubbleSort object as arg
+                            myWriteFile.writeFile(RandomNumbers); // implement writeFile method on WriteFile object
                         }
                         else if (sortMethod == 2){
                        
                 	        System.out.println("Selection sort selected.");
 			 		        SelectionSort selectionSort = new SelectionSort(RandomNumbers); // Create SelectionSort object using RandomNumbers as arg 
-			 		        selectionSort.writeFile(RandomNumbers); // write sorted array to file         	             	
+			 		        WriteFile myWriteFile = new WriteFile(selectionSort); // Create WriteFile object with SelectionSort object as arg
+                            myWriteFile.writeFile(RandomNumbers); // implement writeFile method on WriteFile object 	             	
                         }
                         else if (sortMethod == 3){
                        
                 	        System.out.println("Insertion sort selected.");
 					        InsertionSort insertionSort = new InsertionSort(RandomNumbers); // Create InsertionSort object using RandomNumbers as arg 
-                	        insertionSort.writeFile(RandomNumbers); // write sorted array to file
+					        WriteFile myWriteFile = new WriteFile(insertionSort); // Create WriteFile object with InsertionSort object as arg
+                            myWriteFile.writeFile(RandomNumbers); // implement writeFile method on WriteFile object
                         }
                         else if (sortMethod == 4){                          
                        
                 	        System.out.println("Merge sort selected.");
 					        MergeSort mergeSort = new MergeSort(RandomNumbers); // Create MergeSort object using RandomNumbers as arg 
-                 	        mergeSort.writeFile(RandomNumbers); // write sorted array to file
+					        WriteFile myWriteFile = new WriteFile(mergeSort); // Create WriteFile object with MergeSort object as arg
+                            myWriteFile.writeFile(RandomNumbers); // implement writeFile method on WriteFile object
                         }
                         else if (sortMethod == 5){              	
                        
                 	        System.out.println("Quick sort selected.");
 					        QuickSort quickSort = new QuickSort(RandomNumbers); // Create QuickSort object using RandomNumbers as arg 
-                	        quickSort.writeFile(RandomNumbers); // write sorted array to file        	
+					        WriteFile myWriteFile = new WriteFile(quickSort); // Create WriteFile object with QuickSort object as arg
+                            myWriteFile.writeFile(RandomNumbers); // implement writeFile method on WriteFile object	
                         }
                    
               }while(sortMethod >0 && sortMethod < 6); // end do while
