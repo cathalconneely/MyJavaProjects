@@ -74,8 +74,9 @@ public class WriteFile {
 	       
 	           // for loop iterates through all of sorted array
 	           for(int i=0; i<a.length; i++){  
-	              if(a[i] != 0)                         
+	              if(a[i] != 0){                         
 	              output.write(a[i] + "\n"); // If array size is greater than 0, write all elements of array.                               
+	              }
 	           }  
 	           output.close(); // Close PrintWriter.  
 	           System.out.println("File Written Successfully!");
