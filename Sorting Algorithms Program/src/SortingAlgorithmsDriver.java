@@ -22,7 +22,7 @@ public class SortingAlgorithmsDriver {
         String filePath = pathScanner.nextLine(); // Assigns String filePath to user input.
             
         /* 
-         * Try/Catch statement implemented on scanner file read operation. File is read into an
+         * Try/Catch statement implemented for scanner file read operation. File is read into an
          * array list.
          */
        
@@ -42,7 +42,7 @@ public class SortingAlgorithmsDriver {
                int[] RandomNumbers = convertIntegersToArray(RandomIntegers);
              
                System.out.println("\nPlease Select Sorting Method\n----------------------------\n1.Bubble Sort\n2.Selection Sort\n3.Insertion Sort\n4.Merge Sort \n5.Quick Sort \n6.Exit Program");
-    		   System.out.println(); //Print sorting options followed by blank line.
+    	       System.out.println(); //Print sorting options followed by blank line.
              
     		   /*
     		    *  Scanner reads user input for sorting selection. sortMethod is assigned
