@@ -51,7 +51,7 @@ public class WriteFile {
 	public WriteFile(QuickSort myQuickSort){
 		
 		
-		myQuickSort = quickSort;
+	myQuickSort = quickSort;
 			
 	}
 	
