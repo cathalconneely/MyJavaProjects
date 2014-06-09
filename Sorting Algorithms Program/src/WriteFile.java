@@ -18,14 +18,12 @@ public class WriteFile {
 	// constructor for bubblesort
 	public WriteFile(BubbleSort myBubbleSort){
 		
-		
 	myBubbleSort = bubbleSort;
 		
 	}
 	
 	// constructor for selection sort
 	public WriteFile(SelectionSort mySelectionSort){
-		
 		
 	mySelectionSort = selectionSort;
 		
@@ -34,7 +32,6 @@ public class WriteFile {
 	// constructor for insertion sort
 	public WriteFile(InsertionSort myInsertionSort){
 		
-		
 	myInsertionSort = insertionSort;
 		
 	}
@@ -42,14 +39,12 @@ public class WriteFile {
 	// constructor for merge sort
 	public WriteFile(MergeSort myMergeSort){
 		
-		
 	myMergeSort = mergeSort;
 		
 	}
 	
 	// constructor for quick sort
 	public WriteFile(QuickSort myQuickSort){
-		
 		
 	myQuickSort = quickSort;
 			
