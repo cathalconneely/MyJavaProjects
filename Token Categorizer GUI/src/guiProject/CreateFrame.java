@@ -19,9 +19,9 @@ import java.awt.event.ActionEvent;
 
 public class CreateFrame extends javax.swing.JFrame implements ActionListener {
 
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     // variables Declaration
-	public JOptionPane myJOptionPane;
+    public JOptionPane myJOptionPane;
     private javax.swing.JList<String> jList1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
@@ -274,4 +274,4 @@ public class CreateFrame extends javax.swing.JFrame implements ActionListener {
             }
         });
     }
-}
+} // end class
