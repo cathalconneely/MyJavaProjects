@@ -60,11 +60,11 @@ public class CreateFrame extends javax.swing.JFrame implements ActionListener {
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
         		// Create 2d array for rows and columns in table
         		new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
+                            {null, null, null},
+                            {null, null, null},
+                            {null, null, null},
+                            {null, null, null},
+                            {null, null, null}
             },
             new String [] { // create string for default column headers/title
                 "Title 1", "Title 2", "Title 3"
