@@ -1,0 +1,15 @@
+This program contains a class TokenCategorizer with a main-method which accepts three arguments: the filename of a plain 
+text file, a language code and a country code. Each token in the 
+file specified by the filename should be put into exactly one of the following three categories integral numbers, 
+real numbers  and any other tokens (separated by whitespace). 
+Numbers should be scanned according to the locale specified by the given language and country code. 
+Print the content of each category. 
+
+Once the appropriate data is entered, the program opens a window which shows all tokens in a vertically 
+scrollable table component with three columns named “Integral numbers”, “Real numbers”, 
+“Other tokens”, corresponding to the three token categories. 
+Also, the window contains a list component (type JList) which lists all 
+permutations of the set of up to three tokens in the currently selected table row.
+
+In the window's file options, “Open”  prompts the user for a file name and replaces the content of the table 
+component and the list component appropriately using the tokens in the new file.
