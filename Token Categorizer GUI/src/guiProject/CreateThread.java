@@ -31,7 +31,7 @@ public class CreateThread extends Thread{ // extends thread class to allow multi
                Locale myLocale = new Locale(myLanguage, myCountry); // create locale
                // Create three lists -  one to contain strings, one to contain integers, and one to contain real numbers
                ArrayList<String> stringList = new ArrayList<String>();
-               ArrayList<Integer> intList = new ArrayList<Integer>();
+               ArrayList<Long> intList = new ArrayList<Long>();
                ArrayList<Double> doubleList = new ArrayList<Double>();
 
                Scanner fileIn = null; // Create Scanner
